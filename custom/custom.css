@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+综合样式更改
+--------------------------------------------------------------*/
+.inner-wrapper{background-image:url(../assets/img/bg.png)}
+.site-header {
+    padding:.1rem .8rem;
+    background-image:linear-gradient(90deg, #9c4dff 0, #42a7ff 100%);
+    -webkit-box-shadow:0 0 .5rem -.0625rem rgba(0, 0, 0, .6);
+    box-shadow:0 0 .5rem -.0625rem rgba(0, 0, 0, .6)
+}
+@media only screen and (min-width: 992px) {
+    .k-nav .navbar-brand-new {
+        padding: 5px 20px;
+        font-size: 1.5rem;
+        color: #fff;
+	}
+}
+@media screen and (max-width: 768px) {
+    .k-nav .navbar-brand-new {
+        font-size: 20px;
+        color: #fff;
+        padding: 10px;
+	}
+
+	.navbar-light .navbar-brand-new:hover {
+		color: rgba(255, 255, 255, 0.8);
+	}
+}
+.container-new{
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.row-new{
+    padding-top: 3rem;
+}
+.auxiliary {
+	position:fixed;
+	margin-left:-3rem;
+	top:10rem;
+	z-index:10
+}
+.auxiliary .panel-box {
+	position:relative;
+	margin-bottom:1rem;
+	width:2.3rem;
+	height:2.3rem;
+	background-color:#fff;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,.04);
+	text-align:center;
+	border-radius:50%
+}
+.auxiliary .panel-box .kicon {
+	color:rgba(0,32,89,.44);
+	margin-top:.38rem;
+	font-size:1.3rem
+}
+/*--------------------------------------------------------------
+微信扫一扫分享样式
+--------------------------------------------------------------*/
+.qrcode-plane {
+	position:absolute;
+	left:50%;
+	z-index:0;
+	display:none;
+	margin-top:-10.5rem;
+	margin-left:-4rem;
+	padding:0;
+	width:8rem;
+	height:9rem;
+	border-radius:.125rem;
+	background-color:#fff;
+	-webkit-box-shadow:0 .3125rem 1.25rem 0 rgba(146,146,146,.39);
+	-moz-box-shadow:0 .3125rem 1.25rem 0 rgba(146,146,146,.39);
+	box-shadow:0 .3125rem 1.25rem 0 rgba(146,146,146,.39);
+	color:#555;
+	text-align:center;
+	opacity:.2;
+	-webkit-transition:all .1s ease;
+	transition:all .1s ease
+}
+.qrcode-box:hover .qrcode-plane {
+	z-index:2;
+	display:block;
+	opacity:1
+}
+.qrcode canvas {
+	margin:.6rem .3rem .2rem .2rem;
+	height:auto;
+	max-width:100%
+}
+.qrcode-plane p {
+	color:#676767;
+	white-space:normal;
+	word-wrap:break-word;
+	font-size:.875rem
+}
+.qrcode-box:hover .qrcode-plane {
+	z-index:2;
+	display:block;
+	opacity:1
+}
+/*--------------------------------------------------------------
+上一篇下一篇样式
+--------------------------------------------------------------*/
+.content-navigation {
+	border-radius:.5rem;
+	font-size:.875rem;
+	background-color:#fff;
+	-webkit-box-shadow:0 .0625rem .125rem rgba(0,0,0,.1);
+	-moz-box-shadow:0 .0625rem .125rem rgba(0,0,0,.1);
+	box-shadow:0 .0625rem .125rem rgba(0,0,0,.1)
+}
+.content-navigation .nav-span {
+	float:left;
+	width:50%;
+	text-align:center;
+	margin-right:-.0625rem;
+	padding:.625rem 1.25rem;
+	white-space:nowrap;
+	word-wrap:normal;
+	text-overflow:ellipsis;
+	overflow:hidden
+}
+.content-navigation .previous {
+	border-right:.0625rem solid #f3f3f3
+}
+/*--------------------------------------------------------------
+文章页面图片添加
+--------------------------------------------------------------*/
+.entry-meta .glyphicon {
+	padding:5px;
+	font-size:12px;
+	border-radius:15px;
+}
+.entry-meta .glyphicon-calendar {
+	color:#FE6061;
+	background:#FFD7D7;
+}
+.entry-meta .glyphicon-user {
+	color:#6C62FF;
+	background:#DAD8FF;
+}
+.entry-meta .glyphicon-book {
+	color:#FF7008;
+	background:#ffd6b9;
+}
+.entry-meta .glyphicon-eye-open {
+	color:#9C27B0;
+	background:#f8ccff;
+}
+.entry-meta .glyphicon-comment {
+	color:#3FB750;
+	background:#CDECD2;
+}
+.entry-meta {
+	height:1.125rem;
+	line-height:1;
+	color:#748594;
+	font-size:0.75rem;
+}
+/*--------------------------------------------------------------
+标签样式修改
+--------------------------------------------------------------*/
+.k-main .details .article .footer .tags a{
+	border-radius: 1rem;
+}
+.k-main .details .article .footer .tags a:nth-child(5n) {
+	background-color:#3498db
+}
+.k-main .details .article .footer .tags a:nth-child(5n+1) {
+	background-color:#dc3545
+}
+.k-main .details .article .footer .tags a:nth-child(5n+2) {
+	background-color:#1abc9c
+}
+.k-main .details .article .footer .tags a:nth-child(5n+3) {
+	background-color:#f1c40f
+}
+.k-main .details .article .footer .tags a:nth-child(5n+4) {
+	background-color:#9b59b6
+}
