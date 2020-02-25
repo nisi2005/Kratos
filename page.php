@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-<div class="k-main" style="background:<?php echo kratos_option('g_background', '#f5f5f5'); ?>">
+<div class="k-main  <?php echo kratos_option('top_select', 'banner'); ?>" style="background:<?php echo kratos_option('g_background', '#f5f5f5'); ?>">
     <div class="container <?php if (kratos_option('g_nav_layout') != 'gamma'){echo "container-new";};?>">
         <div class="row <?php if (kratos_option('g_nav_layout') != 'gamma'){echo "row-new";};?>">
         <div class="col-lg-8 details">

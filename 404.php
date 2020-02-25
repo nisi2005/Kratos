@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-<div class="k-main" style="background:#ffffff">
+<div class="k-main <?php echo kratos_option('top_select', 'banner'); ?>" style="background:#ffffff">
     <div class="container">
         <div class="row">
             <div class="col-12 page404">

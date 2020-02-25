@@ -25,7 +25,7 @@
 <body>
 <div class="k-header">
     <?php if (kratos_option('g_nav_layout') != 'alpha') { ?>
-        <nav class="k-nav navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="k-nav navbar navbar-expand-lg navbar-light fixed-top" <?php if(kratos_option('top_select', 'banner') !== 'banner'){ echo 'style="background:' . kratos_option('top_color', '#24292e') .'"';} ?>>
             <div class="container">
                 <a class="navbar-brand" href="<?php echo get_option('home'); ?>">
                     <?php
@@ -55,6 +55,7 @@
                 ?>
             </div>
         </nav>
+        <?php if(kratos_option('top_select', 'banner') == 'banner'){ ?>
         <div class="banner">
             <div class="overlay"></div>
             <div class="content text-center" style="background-image: url(<?php 
@@ -77,6 +78,7 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
     <!-- .banner -->
     <?php } else{ ?>
         <nav class="k-nav navbar navbar-expand-md fixed-top navbar-dark site-header">

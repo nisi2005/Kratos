@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-<div class="k-main <?php if(kratos_option('global_bg')){echo "inner-wrapper";};?>" style="transform: none;">
+<div class="k-main  <?php echo kratos_option('top_select', 'banner'); ?> <?php if(kratos_option('global_bg')){echo "inner-wrapper";};?>" style="transform: none;">
     <div class="container <?php if(kratos_option('g_nav_layout')!= 'gamma'){echo "container-new";};?>">
         <div class="row <?php if(kratos_option('g_nav_layout')!= 'gamma'){echo "row-new";};?>">
             <?php if(kratos_option('g_nav_layout')!= 'gamma'){?>
